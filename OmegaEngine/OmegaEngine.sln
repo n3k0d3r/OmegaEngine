@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmegaEngine", "OmegaEngine\OmegaEngine.csproj", "{BCE47631-A8AC-443E-8457-DA19454BE2E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE47631-A8AC-443E-8457-DA19454BE2E6}.Debug|x86.ActiveCfg = Debug|x86
+		{BCE47631-A8AC-443E-8457-DA19454BE2E6}.Debug|x86.Build.0 = Debug|x86
+		{BCE47631-A8AC-443E-8457-DA19454BE2E6}.Release|x86.ActiveCfg = Release|x86
+		{BCE47631-A8AC-443E-8457-DA19454BE2E6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCB90267-B883-4653-AB1C-34E91C6AEAE5}
+	EndGlobalSection
+EndGlobal
