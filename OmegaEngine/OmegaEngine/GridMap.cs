@@ -8,6 +8,6 @@ namespace OmegaEngine
 {
     class GridMap
     {
-        List<LayerMap> grid;
+        private List<LayerMap> Grid { get; set; }
     }
 }

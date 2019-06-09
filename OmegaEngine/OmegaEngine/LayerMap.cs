@@ -8,6 +8,6 @@ namespace OmegaEngine
 {
     class LayerMap
     {
-        List<List<TileMap>> layer;
+        private List<List<TileMap>> Layer { get; set; }
     }
 }

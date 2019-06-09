@@ -10,6 +10,9 @@ namespace OmegaEngine
 {
     class TileMap
     {
+        private Texture2D Texture { get; set; }
+        private Color Fill { get; set; }
+
         public TileMap(Texture2D texture, Color? color = null)
         {
             Texture = texture;
@@ -20,8 +23,5 @@ namespace OmegaEngine
         {
             Globals.spriteBatch.Draw(Texture, dimensions, Fill);
         }
-
-        private Texture2D Texture { get; set; }
-        private Color Fill { get; set; }
     }
 }
