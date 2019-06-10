@@ -21,7 +21,7 @@ namespace OmegaEngine
 
         public void Draw(Rectangle dimensions)
         {
-            Globals.spriteBatch.Draw(Texture, dimensions, Fill);
+            Globals.spriteBatch.Draw(Texture, dimensions, new Rectangle(0, 0, 32, 32), Fill);
         }
     }
 }

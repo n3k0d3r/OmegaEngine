@@ -13,11 +13,20 @@ namespace OmegaSample
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        EngineManager manager;
+
+        Texture2D sampleTiles;
 
         public Main()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = 1920;
+            graphics.PreferredBackBufferHeight = 1080;
             Content.RootDirectory = "Content";
+
+            this.IsMouseVisible = true;
+
+            manager = EngineManager.Instance;
         }
 
         /// <summary>
@@ -43,6 +52,9 @@ namespace OmegaSample
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            sampleTiles = Content.Load<Texture2D>("tiles");
+
+            manager.Initialize(GraphicsDevice, spriteBatch, sampleTiles, 1, 9, 9);
         }
 
         /// <summary>
@@ -75,9 +87,8 @@ namespace OmegaSample
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
             // TODO: Add your drawing code here
+            manager.Draw();
 
             base.Draw(gameTime);
         }

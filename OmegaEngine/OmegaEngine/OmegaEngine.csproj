@@ -42,6 +42,8 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Camera.cs" />
+    <Compile Include="EngineManager.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="GridMap.cs" />
     <Compile Include="LayerMap.cs" />
